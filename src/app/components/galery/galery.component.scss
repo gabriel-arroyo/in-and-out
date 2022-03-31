@@ -1,0 +1,31 @@
+.container {
+  margin-top: -10px;
+  position: relative;
+  height: 40vw;
+  min-height: 400px;
+  background-color: orange;
+  top: 0;
+  left: 0;
+}
+
+img {
+  height: 40vw;
+  min-height: 400px;
+  width: 100%;
+  z-index: -1;
+}
+
+.subtitle {
+  position: absolute;
+  left: 7%;
+  color: white;
+}
+
+.items-container {
+  position: absolute;
+  left: 7%;
+  top: 10%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}

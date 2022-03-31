@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/in-and-out",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+.container {
+  position: relative;
+  height: 40vw;
+  min-height: 400px;
+  background-color: var(--green);
+  top: 0;
+  left: 0;
+}
+
+img {
+  height: 40vw;
+  min-height: 400px;
+  width: 100%;
+  z-index: -1;
+  clip-path: polygon(45% 0, 55% 55%, 45% 100%, 0 100%, 0 0);
+}
+
+.title1,
+.title2,
+.subtitle {
+  position: absolute;
+  left: 7%;
+  color: white;
+}
+.title1 {
+  top: 20%;
+  font-size: 3vw;
+  text-transform: uppercase;
+}
+.title2 {
+  top: 23%;
+  font-size: 7vw;
+}
+.subtitle {
+  top: 42%;
+  font-size: 1.7vw;
+  width: 40%;
+}
+
+.button {
+  position: absolute;
+  top: 60%;
+  left: 9%;
+  background-color: var(--green);
+  border: none;
+  padding: 1.6% 4%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.6vw;
+}

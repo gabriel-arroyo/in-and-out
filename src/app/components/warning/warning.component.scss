@@ -1,0 +1,32 @@
+.container {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.img-bg {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.logo {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  z-index: 2;
+  height: 60%;
+  margin-left: 5%;
+}
+
+.title {
+  position: absolute;
+  top: 25%;
+  right: 5%;
+  width: 65%;
+  z-index: 2;
+  text-align: end;
+  color: white;
+  font-size: 3.5vw;
+}
