@@ -6,26 +6,41 @@
   background-color: orange;
   top: 0;
   left: 0;
+  color:white;
 }
 
-img {
+.bg {
   height: 40vw;
   min-height: 400px;
   width: 100%;
   z-index: -1;
 }
 
+.content {
+  position:absolute;
+  top:10%;
+  width: 100%;
+}
+
+.title-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  text-align: center;
+}
+
 .subtitle {
-  position: absolute;
-  left: 7%;
-  color: white;
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  margin-top: 1%;
+  margin-bottom: 4%;
 }
 
 .items-container {
-  position: absolute;
-  left: 7%;
-  top: 10%;
   display: flex;
-  justify-content: space-between;
-  width: 100%;
 }
