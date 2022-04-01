@@ -6,6 +6,8 @@ import { ButtonComponent } from './button/button.component';
 import { WarningComponent } from './warning/warning.component';
 import { GaleryComponent } from './galery/galery.component';
 import { GaleryItemComponent } from './galery-item/galery-item.component';
+import { WarningImageComponent } from './warning-image/warning-image.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 
 
@@ -16,7 +18,9 @@ import { GaleryItemComponent } from './galery-item/galery-item.component';
     ButtonComponent,
     WarningComponent,
     GaleryComponent,
-    GaleryItemComponent
+    GaleryItemComponent,
+    WarningImageComponent,
+    AboutUsComponent
   ],
   exports: [
     NavbarComponent,
@@ -24,7 +28,9 @@ import { GaleryItemComponent } from './galery-item/galery-item.component';
     ButtonComponent,
     WarningComponent,
     GaleryComponent,
-    GaleryItemComponent
+    GaleryItemComponent,
+    WarningImageComponent,
+    AboutUsComponent
   ],
   imports: [
     CommonModule

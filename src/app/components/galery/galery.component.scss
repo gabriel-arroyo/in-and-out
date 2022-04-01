@@ -1,8 +1,10 @@
+$galery-height: 500px;
+
 .container {
   margin-top: -10px;
   position: relative;
   height: 40vw;
-  min-height: 500px;
+  min-height: $galery-height;
   background-color: orange;
   top: 0;
   left: 0;
@@ -11,7 +13,7 @@
 
 .bg {
   height: 50vw;
-  min-height: 400px;
+  min-height: $galery-height;
   width: 100%;
   z-index: -1;
 }
@@ -39,6 +41,7 @@
   padding-right: 20%;
   margin-top: 2%;
   margin-bottom: 5%;
+  font-weight: 100;
 }
 
 .items-container {

@@ -1,0 +1,29 @@
+.content {
+  position: relative;
+  margin-top: 7%;
+  margin-bottom: 11%;
+}
+
+.title-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  text-align: center;
+}
+
+.subtitle {
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  font-weight: 100;
+}
+
+.items-container {
+  display: flex;
+  justify-content: space-around;
+}
