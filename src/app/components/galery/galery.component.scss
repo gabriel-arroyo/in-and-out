@@ -2,23 +2,23 @@
   margin-top: -10px;
   position: relative;
   height: 40vw;
-  min-height: 400px;
+  min-height: 500px;
   background-color: orange;
   top: 0;
   left: 0;
-  color:white;
+  color: white;
 }
 
 .bg {
-  height: 40vw;
+  height: 50vw;
   min-height: 400px;
   width: 100%;
   z-index: -1;
 }
 
 .content {
-  position:absolute;
-  top:10%;
+  position: absolute;
+  top: 15%;
   width: 100%;
 }
 
@@ -37,10 +37,11 @@
   text-align: center;
   padding-left: 20%;
   padding-right: 20%;
-  margin-top: 1%;
-  margin-bottom: 4%;
+  margin-top: 2%;
+  margin-bottom: 5%;
 }
 
 .items-container {
   display: flex;
+  justify-content: space-around;
 }
