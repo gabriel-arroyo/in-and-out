@@ -1,7 +1,7 @@
-$galery-height: 500px;
+$galery-height: 600px;
 
 .container {
-  margin-top: -10px;
+  margin-top: -5px;
   position: relative;
   height: 40vw;
   min-height: $galery-height;
@@ -20,7 +20,7 @@ $galery-height: 500px;
 
 .content {
   position: absolute;
-  top: 15%;
+  top: 5%;
   width: 100%;
 }
 
@@ -48,4 +48,21 @@ $galery-height: 500px;
 .items-container {
   display: flex;
   justify-content: space-around;
+}
+
+.button {
+  background-color: var(--green);
+  border: none;
+  padding: 1.6% 4%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.6vw;
+  color: var(--gray);
+}
+
+.center {
+  margin-top: 80px;
+  margin-left: 50%;
+  transform: translate(-50%,0);
 }
