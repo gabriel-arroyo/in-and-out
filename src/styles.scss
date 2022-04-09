@@ -1,16 +1,30 @@
+@import 'material-icons/iconfont/material-icons.css';
+
 /* You can add global styles to this file, and also import other style files */
 @font-face {
   font-family: "Egyptienne";
   src: url("./assets/fonts/EgyptienneStdMedium.ttf") format("truetype");
 }
+@font-face {
+  font-family: "EgyptienneLight";
+  src: url("./assets/fonts/EgyptienneStdLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "EgyptienneRegular";
+  src: url("./assets/fonts/EgyptienneRegular.ttf") format("truetype");
+}
+
+
 
 $gray: #494949;
 :root {
   --gray: #{$gray};
   --green: #cff800;
+  --orange: #ffa700;
 }
 
-* {
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;

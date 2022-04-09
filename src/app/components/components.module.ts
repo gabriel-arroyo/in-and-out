@@ -8,6 +8,8 @@ import { GaleryComponent } from './galery/galery.component';
 import { GaleryItemComponent } from './galery-item/galery-item.component';
 import { WarningImageComponent } from './warning-image/warning-image.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -20,7 +22,8 @@ import { AboutUsComponent } from './about-us/about-us.component';
     GaleryComponent,
     GaleryItemComponent,
     WarningImageComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    ContactUsComponent
   ],
   exports: [
     NavbarComponent,
@@ -30,10 +33,12 @@ import { AboutUsComponent } from './about-us/about-us.component';
     GaleryComponent,
     GaleryItemComponent,
     WarningImageComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    ContactUsComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ]
 })
 export class ComponentsModule { }
