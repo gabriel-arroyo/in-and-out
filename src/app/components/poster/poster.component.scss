@@ -15,32 +15,39 @@ img {
   clip-path: polygon(45% 0, 55% 55%, 45% 100%, 0 100%, 0 0);
 }
 
+.info-container {
+  position:absolute;
+  top: 0%;
+  left: 0%;
+  padding-left: 8vw;
+  padding-top: 10vw;
+}
+
 .title1,
 .title2,
-.subtitle {
-  position: absolute;
-  left: 7%;
+.subtitle {  
   color: white;
 }
 .title1 {
-  top: 20%;
   font-size: 3vw;
   text-transform: uppercase;
+  font-family: 'EgyptienneLight';
+  margin-bottom: -2vw;
 }
 .title2 {
-  top: 23%;
   font-size: 7vw;
+  margin-bottom: 20px;
+  
 }
 .subtitle {
-  top: 47%;
   font-size: 1.7vw;
   width: 40%;
+  font-family: 'EgyptienneLight';
+  margin-bottom: 40px;
 }
 
 .button {
-  position: absolute;
-  top: 69%;
-  left: 9%;
+  margin-left: 3%;
   background-color: var(--green);
   border: none;
   padding: 1.6% 4%;
