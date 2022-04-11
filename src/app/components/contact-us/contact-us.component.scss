@@ -1,94 +1,94 @@
 img {
-    width: 100%;
+  width: 100%;
 }
 .container {
-    color: var(--orange);
-    margin-top: 10vh;
+  color: var(--orange);
+  margin-top: 10vh;
 }
 
-.title{
-    font-size: 3vw;
-    text-align: center;
+.title {
+  font-size: 3vw;
+  text-align: center;
 }
 
 .body {
-    display:flex;
-    flex-wrap: wrap;
-    align-items:flex-start;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
 }
 
-.info-container{
-    font-size: 2vw;
-    text-align: right;
-    font-family: "EgyptienneRegular" !important;
-    margin: 2vw;
+.info-container {
+  font-size: 2vw;
+  text-align: right;
+  font-family: "EgyptienneRegular" !important;
+  margin: 2vw;
 }
 
 .form {
-    margin: 2vw;
-    
+  margin: 2vw;
 }
 
 form {
-    display:flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items:flex-start;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .form-group {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 input {
-    margin: 2.5% 0px;
-    width: 35vw;
-    background-color: rgb(235, 235, 235);
-    border: none;
-    padding: 10px;
-    font-size: 1.3vw;
-    color: var(--orange);
-    font-family: "EgyptienneRegular" !important;
+  margin: 2.5% 0px;
+  width: 35vw;
+  background-color: rgb(235, 235, 235);
+  border: none;
+  padding: 10px;
+  font-size: 1.3vw;
+  color: var(--orange);
+  font-family: "EgyptienneRegular" !important;
 }
 
-.button-container{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.button-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 button {
-    background-color: var(--orange); /* Green */
-    border: none;
-    color: white;
-    margin-top: 5%;
-    padding: .7vw 10vw;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1rem;
-    text-transform: uppercase;
-    font-family: "Egyptienne";
-    border-radius: 160px;
-  }
-
-.social {
-    margin-top: 3%;
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    margin-right: 3vw;
-    img{
-        width: 4%;
-        margin-right: 1.5%;
-    }
+  background-color: var(--orange); /* Green */
+  border: none;
+  color: white;
+  margin-top: 5%;
+  padding: 0.7vw 10vw;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: "Egyptienne";
+  border-radius: 160px;
+  cursor: pointer;
 }
 
-.material-icons-outlined{
-    display: inline-flex;
-    vertical-align:middle;
+.social {
+  margin-top: 3%;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  margin-right: 3vw;
+  img {
+    width: 4%;
+    margin-right: 1.5%;
+  }
+}
+
+.material-icons-outlined {
+  display: inline-flex;
+  vertical-align: middle;
 }
