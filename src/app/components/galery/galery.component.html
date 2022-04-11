@@ -13,10 +13,47 @@
       </h4>
     </div>
     <div class="items-container">
-      <app-galery-item description="From $200 to $300"></app-galery-item>
-      <app-galery-item description="From $400 to $500"></app-galery-item>
-      <app-galery-item description="From $500 to $600"></app-galery-item>
+      <app-galery-item
+        class="zoom item"
+        description="From $200 to $300"
+      ></app-galery-item>
+      <app-galery-item
+        class="zoom item"
+        description="From $400 to $500"
+      ></app-galery-item>
+      <app-galery-item
+        class="zoom item"
+        description="From $500 to $600"
+      ></app-galery-item>
     </div>
-    <a [routerLink]="['/about']" class="button center">View More</a>
+    <a class="button zoom" (click)="activate()">View More</a>
+    <div class="panel" [class.active]="active">
+      <div class="items-container">
+        <app-galery-item
+          class="zoom item"
+          description="From $200 to $300"
+        ></app-galery-item>
+        <app-galery-item
+          class="zoom item"
+          description="From $400 to $500"
+        ></app-galery-item>
+        <app-galery-item
+          class="zoom item"
+          description="From $500 to $600"
+        ></app-galery-item>
+        <app-galery-item
+          class="zoom item"
+          description="From $200 to $300"
+        ></app-galery-item>
+        <app-galery-item
+          class="zoom item"
+          description="From $400 to $500"
+        ></app-galery-item>
+        <app-galery-item
+          class="zoom item"
+          description="From $500 to $600"
+        ></app-galery-item>
+      </div>
+    </div>
   </div>
 </div>

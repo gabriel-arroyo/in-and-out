@@ -5,15 +5,18 @@
   left: 0;
   color: white;
 }
- 
-  .content {
-    background-color: orange;
-    background-image: url("../../../assets/images/CONTAINER NARANJA_LARGO.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+
+.content {
+  background-color: orange;
+  background-image: url("../../../assets/images/CONTAINER NARANJA_LARGO.jpg");
+  background-repeat: repeat;
+  background-size: cover;
   position: absolute;
   top: 5%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
 }
 
 .title-container {
@@ -41,6 +44,13 @@
 .items-container {
   display: flex;
   justify-content: space-around;
+  place-items: center;
+  flex-wrap: wrap;
+  width: 70%;
+}
+
+.item {
+  margin: 1rem;
 }
 
 .button {
@@ -53,10 +63,31 @@
   font-size: 1.6vw;
   color: var(--gray);
   margin-bottom: 5vh;
+  margin-top: 80px;
+  transition: 0.4s;
 }
 
-.center {
-  margin-top: 80px;
-  margin-left: 50%;
-  transform: translate(-50%,0);
+.zoom {
+  transition: transform 0.2s; /* Animation */
+}
+
+.zoom:hover {
+  transform: scale(
+    1.2
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.active {
+  overflow: visible !important;
+  height: calc(100% + 500px);
+  max-height: 800px !important;
+}
+
+.panel {
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  display: flex;
+  justify-content: center;
 }

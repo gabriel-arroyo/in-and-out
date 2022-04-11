@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./galery.component.scss']
 })
 export class GaleryComponent implements OnInit {
-
+  public active: boolean = false;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  activate() {
+    this.active = !this.active;
   }
 
 }
