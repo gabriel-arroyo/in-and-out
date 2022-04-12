@@ -46,3 +46,32 @@ img {
   width: 90%;
 }
 
+@media screen and (max-width: 580px) {
+        .content {
+          top: 45%;
+          left: 45%;
+          transform: translate(-50%, -50%);
+          height: 70%;
+          z-index: 2;
+          border-radius: 40px;
+          background-color: orange;
+        }
+
+        img {
+          clip-path: none;
+        }
+
+        .title,
+        .text {
+          left: 0%;
+        }
+        .title {
+          top: 4%;
+          font-size: 7vw;
+        }
+        .text {
+          top: 15%;
+          left: 5%;
+          font-size: 4vw;
+        }
+}
