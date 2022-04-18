@@ -91,3 +91,28 @@
   display: flex;
   justify-content: center;
 }
+
+@media screen and (max-width:580px) {
+        .title {
+          text-align: center;
+          font-size: 6vw;
+        }
+        .zoom {
+          transition: none;
+        }
+
+        .zoom:hover {
+          transform: none;
+        }
+        .button {
+                font-size: 4vw;
+        }
+        .items-container {
+          width: 100%;
+        }
+
+        .item {
+          margin: .5rem 1rem;
+        }
+}
+

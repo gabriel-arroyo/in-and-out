@@ -7,6 +7,7 @@
   left: 0;
 }
 
+
 img {
   height: 40vw;
   min-height: 400px;
@@ -86,4 +87,54 @@ img {
   40%, 60% {
     transform: translate3d(4px, 0, 0);
   }
+}
+
+@media screen and (max-width: 580px) {
+    .container {
+        height: 60vw;
+        max-height: 60vw;
+        min-height: 60vw;
+        width:100%;
+    }
+    img {
+        height: 60vw;
+        min-height: 60vw;
+        min-height: 60vw;
+        width: 100%;
+        z-index: -1;
+        clip-path: none;
+    }
+
+    .info-container {
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+    }
+
+    .title1,
+    .title2,
+    .subtitle {  
+        color: white;
+        width:100%;
+    }
+    .title1 {
+        font-size: 6vw;
+        margin-bottom: -2vw;
+    }
+    .title2 {
+        font-size: 9vw;
+        margin-bottom: 10px;
+
+    }
+    .subtitle {
+        font-size: 3vw;
+        width: 70%;
+        margin-bottom: 20px;
+    }
+
+    .button {
+        font-size: 4vw;
+        width:70%;
+    }
+
 }
