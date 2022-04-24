@@ -9,24 +9,55 @@
   position: relative;
   top: 0;
   left: 0;
+  height: 30vw;
 }
 
 .logo {
   position: absolute;
-  top: 10%;
-  left: 5%;
+  top: 5%;
+  left: 0%;
   z-index: 2;
-  height: 60%;
+  height: 90%;
   margin-left: 5%;
 }
 
 .title {
   position: absolute;
-  top: 25%;
+  top: 15%;
   right: 5%;
   width: 65%;
   z-index: 2;
   text-align: end;
   color: white;
-  font-size: 3.5vw;
+  font-size: 3vw;
+}
+
+@media screen and (max-width: 580px) {
+  .img-bg {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 35vw;
+  }
+
+  .logo {
+    position: absolute;
+    top: 5%;
+    left: 0%;
+    z-index: 2;
+    height: 90%;
+    margin-left: 5%;
+  }
+
+  .title {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    width: 55%;
+    z-index: 2;
+    text-align: end;
+    color: white;
+    font-size: 4vw;
+  }
 }

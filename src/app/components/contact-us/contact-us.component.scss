@@ -9,6 +9,7 @@ img {
 .title {
   font-size: 3vw;
   text-align: center;
+  animation: appear-op 2s 1;
 }
 
 .body {
@@ -23,10 +24,12 @@ img {
   text-align: right;
   font-family: "EgyptienneRegular" !important;
   margin: 2vw;
+  animation: appear-left 1s 1;
 }
 
 .form {
   margin: 2vw;
+  animation: appear-right 1s 1;
 }
 
 form {
@@ -70,12 +73,14 @@ button {
   text-decoration: none;
   display: inline-block;
   font-size: 1rem;
-  text-transform: uppercase;
   font-family: "Egyptienne";
-  border-radius: 160px;
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
 .social {
   margin-top: 3%;
   display: flex;
@@ -94,37 +99,64 @@ button {
 }
 
 @media screen and (max-width: 580px) {
-        .body {
-                flex-direction:column;
-                justify-content: center;
-                align-items:center;
-        }
-        .title {
-          font-size: 7vw;
-        }
+  .body {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .title {
+    font-size: 7vw;
+  }
 
-        .info-container {
-          font-size: 4vw;
-          text-align: center;
-          margin: 2vw;
-        }
+  .info-container {
+    font-size: 4vw;
+    text-align: center;
+    margin: 2vw;
+  }
 
-        input {
-          width: 45vw;
-          padding: 6px;
-          font-size: 4vw;
-        }
+  input {
+    width: 45vw;
+    padding: 6px;
+    font-size: 4vw;
+  }
 
+  .social {
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    img {
+      width: 8%;
+      margin-right: 3%;
+    }
+  }
+}
 
-        .social {
-          margin-top: 3%;
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          img {
-            width: 8%;
-            margin-right: 3%;
-          }
-        }
-
+@keyframes appear-left {
+  from {
+    transform: translate(-500px);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0px);
+    opacity: 1;
+  }
+}
+@keyframes appear-right {
+  from {
+    transform: translate(500px);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0px);
+    opacity: 1;
+  }
+}
+@keyframes appear-op {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
