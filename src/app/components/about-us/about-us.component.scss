@@ -15,9 +15,8 @@
   width: 85%;
   height: 70%;
   z-index: 2;
-  border-radius: 40px;
   background-color: orange;
-  animation: fade 1.5s 1;
+  animation: appear 2s 1;
 }
 
 img {
@@ -34,7 +33,7 @@ img {
   left: 5%;
   color: white;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.63);
-  animation: appear 2s 1;
+  // animation: appear 2s 1;
 }
 .title {
   top: 7%;
@@ -81,11 +80,11 @@ img {
 
 @keyframes appear {
   from {
-    transform: translate(-1000px);
+    transform: translate(-1000px, -50%);
     opacity: 0;
   }
   to {
-    transform: translate(0px);
+    transform: translate(-50%, -50%);
     opacity: 1;
   }
 }
