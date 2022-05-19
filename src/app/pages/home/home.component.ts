@@ -17,6 +17,8 @@ export class HomeComponent implements OnInit {
   
   ngOnInit(): void {
     AOS.init()
+    let lang = localStorage.getItem("language") ?? "en";
+    this.onLanguageChange(lang)
   }
   
   onLanguageChange(lang:string){
@@ -25,4 +27,5 @@ export class HomeComponent implements OnInit {
     this.gallery = Gallery[lang]
     this.navbar = Navbar[lang]
   }
+
 }

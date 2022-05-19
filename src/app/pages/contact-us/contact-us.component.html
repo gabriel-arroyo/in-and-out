@@ -1,6 +1,6 @@
-<app-navbar></app-navbar>
+<app-navbar (languageEmitter)="onLanguageChange($event)" [data]="navbar"></app-navbar>
 <div class="container">
-  <div class="title">Contact Us</div>
+  <div class="title">{{data.title}}</div>
   <div class="body">
     <div class="info-container">
       <div class="text-container">
@@ -27,7 +27,7 @@
             class="form-control"
             name="Name"
             aria-describedby="Full Name"
-            placeholder="Full Name"
+            placeholder="{{data.name}}"
             formControlName="Name"
           />
           <input
@@ -35,7 +35,7 @@
             class="form-control"
             name="Phone"
             aria-describedby="Phone Number"
-            placeholder="Phone Number"
+            placeholder="{{data.phone}}"
             formControlName="Phone"
           />
           <input
@@ -43,13 +43,13 @@
             class="form-control"
             name="Email"
             aria-describedby="emailHelp"
-            placeholder="Email"
+            placeholder="{{data.mail}}"
             formControlName="Email"
           />
         </div>
 
         <div class="button-container">
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn-primary">{{data.button}}</button>
         </div>
       </form>
     </div>

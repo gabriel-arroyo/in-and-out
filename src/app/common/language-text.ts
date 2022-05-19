@@ -24,22 +24,22 @@ export const Poster: Translation<IPoster> = {
         title1: "Bienvenido a",
         title2: "In & Out",
         subtitle: "Estamos para servirte, solo elige tu dumpster, llámanos y lo tendrás disponible en el tiempo acordado",
-        button: "Rent it Now"
+        button: "Renta ahora"
     },
     en: {
         title1: "Welcome to",
         title2: "In & Out",
         subtitle: "We are here to serve you, just choose your dumpster, call us and you will have it available at the agreed time.",
-        button: "Renta ahora"
+        button: "Rent it Now"
     }
 }
 
 export const Warning: Translation<IWarning> = {
     es: {
-        text: "español"
+        text: "No materiales peligrosos, productos químicos, llantas, asbesto, tanques de gasolina, roca, tierra, ladrillo, piedra."
     },
     en: {
-        text: "english"
+        text: "No hazardous Materials, Chemicals, Tires, Asbestos, Gas Tanks, Rock, Dirt, Brick, Stone."
     }
 }
 

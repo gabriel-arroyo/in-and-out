@@ -26,12 +26,15 @@ export class NavbarComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    let lang = localStorage.getItem("language") ?? "en";
+    this.languageForm.controls['language'].setValue(lang)
   }
 
   onChangeLanguage(): void {
+    let lang:string = this.languageForm.get("language")?.value
     console.log(this.languageForm.value)
-    GlobalState.language = this.languageForm.value
-    this.languageEmitter.emit(this.languageForm.get("language")?.value)
+    this.languageEmitter.emit(lang)
+    localStorage.setItem('language', lang)
   }
 
 }

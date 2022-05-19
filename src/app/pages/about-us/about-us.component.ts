@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { IAbout, INavabar } from 'src/app/common/iComponents';
+import { About, Navbar } from 'src/app/common/language-text';
 
 @Component({
   selector: 'app-about-us',
@@ -6,10 +8,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about-us.component.scss']
 })
 export class AboutUsComponent implements OnInit {
-
+  navbar: INavabar = Navbar['en'];
+  data: IAbout = About['en']
   constructor() { }
 
   ngOnInit(): void {
+    let lang = localStorage.getItem("language") ?? "en";
+    this.onLanguageChange(lang)
   }
-
+  onLanguageChange(lang:string){
+    this.navbar = Navbar[lang]
+    this.data = About[lang]
+  }
 }
