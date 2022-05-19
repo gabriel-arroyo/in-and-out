@@ -6,54 +6,23 @@
   /> -->
   <div class="content">
     <div class="title-container">
-      <h1 data-aos="fade-up" data-aos-duration="1500" class="title">Gallery</h1>
+      <h1 data-aos="fade-up" data-aos-duration="1500" class="title">{{data.title}}</h1>
       <h3 data-aos="zoom-in" data-aos-duration="1500" class="subtitle">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
+        {{data.subtitle}}
       </h3>
     </div>
     <div class="items-container">
-      <app-galery-item
+      <app-galery-item *ngFor="let item of data.dumpsters"
         class="zoom item"
-        description="From $200 to $300"
-      ></app-galery-item>
-      <app-galery-item
-        class="zoom item"
-        description="From $400 to $500"
-      ></app-galery-item>
-      <app-galery-item
-        class="zoom item"
-        description="From $500 to $600"
+        price="{{item.price}}"
+        model="{{item.model}}"
       ></app-galery-item>
     </div>
     <a class="button zoom" (click)="activate()">View More</a>
     <div class="panel" [class.active]="active">
-      <div class="items-container">
-        <app-galery-item
-          class="zoom item"
-          description="From $200 to $300"
-        ></app-galery-item>
-        <app-galery-item
-          class="zoom item"
-          description="From $400 to $500"
-        ></app-galery-item>
-        <app-galery-item
-          class="zoom item"
-          description="From $500 to $600"
-        ></app-galery-item>
-        <app-galery-item
-          class="zoom item"
-          description="From $200 to $300"
-        ></app-galery-item>
-        <app-galery-item
-          class="zoom item"
-          description="From $400 to $500"
-        ></app-galery-item>
-        <app-galery-item
-          class="zoom item"
-          description="From $500 to $600"
-        ></app-galery-item>
-      </div>
+      <h3 data-aos="zoom-in" data-aos-duration="1500" class="subtitle">
+        {{data.moreInfo}}
+      </h3>
     </div>
   </div>
 </div>

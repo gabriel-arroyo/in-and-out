@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { IGallery } from 'src/app/common/iComponents';
+import { Gallery } from 'src/app/common/language-text';
 
 @Component({
   selector: 'app-galery',
@@ -6,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./galery.component.scss']
 })
 export class GaleryComponent implements OnInit {
+  @Input() data: IGallery = Gallery['en']
   public active: boolean = false;
   constructor() { }
 

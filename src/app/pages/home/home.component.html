@@ -1,4 +1,4 @@
-<app-navbar></app-navbar>
-<app-poster></app-poster>
-<app-warning></app-warning>
-<app-galery></app-galery>
+<app-navbar (languageEmitter)="onLanguageChange($event)" [data]="navbar"></app-navbar>
+<app-poster [data]="poster"></app-poster>
+<app-warning [data]="warning"></app-warning>
+<app-galery [data]="gallery"></app-galery>

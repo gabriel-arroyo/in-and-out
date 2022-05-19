@@ -9,6 +9,7 @@ import { WarningImageComponent } from './warning-image/warning-image.component';
 
 import { RouterModule } from '@angular/router';
 import { GaleryComponent } from './galery/galery.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -35,7 +36,8 @@ import { GaleryComponent } from './galery/galery.component';
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    ReactiveFormsModule
   ]
 })
 export class ComponentsModule { }

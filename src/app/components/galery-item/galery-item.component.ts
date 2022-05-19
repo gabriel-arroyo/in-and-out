@@ -6,7 +6,8 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./galery-item.component.scss']
 })
 export class GaleryItemComponent implements OnInit {
-  @Input() description = '';
+  @Input() model = '';
+  @Input() price = '';
   constructor() { }
 
   ngOnInit(): void {

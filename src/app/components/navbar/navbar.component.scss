@@ -7,6 +7,26 @@
   padding: 1% 5%;
   z-index: 1;
 }
+.right-items {
+  display: flex;
+  align-items: center;
+}
+.img-lang {
+  width: 16px;
+  height: 16px;
+}
+form {
+  display: flex;
+  align-items: center;
+}
+
+select {
+  background-color: var(--gray);
+  border: none;
+  font-size: 1.3vw;
+  color: var(--orange);
+  font-family: "EgyptienneRegular" !important;
+}
 
 .logo-bg {
   background-color: var(--gray);

@@ -2,10 +2,18 @@
   <div class="logo-bg">
     <img src="../../../assets/images/logo.png" alt="logo" />
   </div>
-  <div class="menu">
-    <a [routerLink]="['/']" class="menu-item">Home</a>
-    <a [routerLink]="['/about']" class="menu-item">About</a>
-    <a href="#gallery" class="menu-item">Gallery</a>
-    <a [routerLink]="['/contact']" class="menu-item">Contact Us</a>
+  <div class="right-items">
+    <div class="menu">
+      <a [routerLink]="['/']" class="menu-item">{{data.home}}</a>
+      <a [routerLink]="['/about']" class="menu-item">{{data.about}}</a>
+      <a href="#gallery" class="menu-item">{{data.gallery}}</a>
+      <a [routerLink]="['/contact']" class="menu-item">{{data.contact}}</a>
+    </div>
+    <form [formGroup]="languageForm" (change)="onChangeLanguage()">
+      <img class="img-lang" src="../../../assets/images/world.png" alt="world">
+      <select name="language" id="language" formControlName="language">
+        <option *ngFor="let lan of languages" [ngValue]="lan.short">{{lan.name}}</option>
+      </select>
+    </form>
   </div>
 </div>

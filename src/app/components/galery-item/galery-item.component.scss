@@ -9,12 +9,16 @@ img {
   height: 20vw;
   width: 20vw;
 }
-.description {
+.model {
   margin-top: 20px;
   text-align: center;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.63);
 }
-
+.price {
+  margin-top: 15px;
+  text-align: center;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.63);
+}
 @media screen and (max-width: 580px) {
   .container {
     margin: 0%;

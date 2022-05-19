@@ -1,12 +1,11 @@
 <div id="poster" class="container">
   <img src="../../../assets/images/CONTAINER NEGRO.jpg" alt="bg" />
   <div class="info-container">
-    <div class="title1">Welcome to</div>
-    <div class="title2">IN & OUT</div>
+    <div class="title1">{{data.title1}}</div>
+    <div class="title2">{{data.title2}}</div>
     <div class="subtitle">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.
+      {{data.subtitle}}
     </div>
-    <a [routerLink]="['/contact']" class="button">Rent your Dumpster</a>
+    <a [routerLink]="['/contact']" class="button">{{data.button}}</a>
   </div>
 </div>
