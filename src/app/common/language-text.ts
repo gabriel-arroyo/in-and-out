@@ -14,7 +14,7 @@ export const Navbar: Translation<INavabar> = {
     en: {
         home: "Home",
         about: "About",
-        contact: "Contact",
+        contact: "Contact Us",
         gallery: "Gallery"
     }
 }
@@ -36,10 +36,10 @@ export const Poster: Translation<IPoster> = {
 
 export const Warning: Translation<IWarning> = {
     es: {
-        text: "No materiales peligrosos, productos químicos, llantas, asbesto, tanques de gasolina, roca, tierra, ladrillo, piedra."
+        text: "NO materiales peligrosos, productos químicos, llantas, asbesto, tanques de gasolina, roca, tierra, ladrillo, piedra."
     },
     en: {
-        text: "No hazardous Materials, Chemicals, Tires, Asbestos, Gas Tanks, Rock, Dirt, Brick, Stone."
+        text: "NO hazardous Materials, Chemicals, Tires, Asbestos, Gas Tanks, Rock, Dirt, Brick, Stone."
     }
 }
 
@@ -76,19 +76,19 @@ export const Gallery: Translation<IGallery> ={
         dumpsters:[
             {
                 model: "10 yards",
-                price: "From 300 and up"
+                price: "From $300 and up"
             },
             {
                 model: "15 yards",
-                price: "Desde 360 USD"
+                price: "From $360 and up"
             },
             {
                 model: "20 yards",
-                price: "From 390 and up"
+                price: "From $390 and up"
             },
             {
                 model: "30 yards",
-                price: "From 475 and up"
+                price: "From $475 and up"
             },
         ],
         moreInfo:`Currently, we have service at Detroit and surrounding areas.  Some of Those: 

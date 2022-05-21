@@ -7,9 +7,9 @@
   <div class="content">
     <div class="title-container">
       <h1 data-aos="fade-up" data-aos-duration="1500" class="title">{{data.title}}</h1>
-      <h3 data-aos="zoom-in" data-aos-duration="1500" class="subtitle">
+      <p data-aos="zoom-in" data-aos-duration="1500" class="subtitle">
         {{data.subtitle}}
-      </h3>
+      </p>
     </div>
     <div class="items-container">
       <app-galery-item *ngFor="let item of data.dumpsters"
@@ -18,11 +18,13 @@
         model="{{item.model}}"
       ></app-galery-item>
     </div>
-    <a class="button zoom" (click)="activate()">View More</a>
+    <p class="more-info" data-aos="zoom-in" data-aos-duration="1500">
+      {{data.moreInfo}}
+    </p>
+    <div class="blanc"> </div>
+    <!--<a class="button zoom" (click)="activate()">View More</a>
     <div class="panel" [class.active]="active">
-      <h3 data-aos="zoom-in" data-aos-duration="1500" class="subtitle">
-        {{data.moreInfo}}
-      </h3>
     </div>
+    -->
   </div>
 </div>

@@ -17,6 +17,7 @@ export class HomeComponent implements OnInit {
   
   ngOnInit(): void {
     AOS.init()
+    AOS.refresh()
     let lang = localStorage.getItem("language") ?? "en";
     this.onLanguageChange(lang)
   }

@@ -8,7 +8,7 @@
 
 .content {
   background-color: orange;
-  // background-image: url("../../../assets/images/CONTAINER NARANJA_LARGO.jpg");
+  background-image: url("../../../assets/images/CONTAINER NARANJA_LARGO.jpg");
   background-repeat: repeat;
   background-size: cover;
   position: absolute;
@@ -30,17 +30,16 @@
 .title {
   text-align: center;
   font-size: 3.5vw;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.63);
 }
 
 .subtitle {
+  font-size: 2.3vw;
   text-align: center;
   padding-left: 20%;
   padding-right: 20%;
   margin-top: 2%;
   margin-bottom: 5%;
   font-weight: 100;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.63);
 }
 
 .items-container {
@@ -48,7 +47,7 @@
   justify-content: space-around;
   place-items: center;
   flex-wrap: wrap;
-  width: 70%;
+  width: 80%;
 }
 
 .item {
@@ -92,6 +91,20 @@
   transition: max-height 0.2s ease-out;
   display: flex;
   justify-content: center;
+}
+
+.more-info {
+  font-size: 2.3vw;
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-weight: 100;
+}
+.blanc {
+  height: 200px;
+  background-color: transparent;
 }
 
 @media screen and (max-width: 580px) {

@@ -7,17 +7,16 @@
 
 img {
   height: 20vw;
-  width: 20vw;
+  width: auto;
 }
 .model {
-  margin-top: 20px;
   text-align: center;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.63);
 }
 .price {
-  margin-top: 15px;
+  margin-top: 12%;
+  margin-bottom: 5%;
   text-align: center;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.63);
+  font-size: 2.5vw;
 }
 @media screen and (max-width: 580px) {
   .container {

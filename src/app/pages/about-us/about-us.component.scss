@@ -1,25 +1,61 @@
 .container {
+  background-color: var(--green);
+}
+.content {
+  background-color: orange;
+  // animation: appear 2s 1;
+  z-index: 2;
+}
+.info {
+  display: flex;
+  flex-direction: row;
+  width: 112%;
+}
+
+.title,
+.text {
+  left: 5%;
+  color: white;
+}
+
+.title {
+  font-size: 4vw;
+  text-align:center;
+  text-transform: capitalize;
+  margin: 18px;
+  margin-bottom: 5px;
+  font-family: "EgyptienneBold";
+}
+
+.text {
+  margin: 0;
+  padding-left: 5vw;
+  padding-right: 1vw;
+  font-size: 1.6vw;
+  width: 60%;
+  text-align: justify;
+  line-height: 140%;
+}
+
+.container {
   position: relative;
   height: 100%;
   min-height: 400px;
-  background-color: var(--green);
   top: -5px;
   left: 0;
   width: 100%;
 }
 .content {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 85%;
-  height: 70%;
-  z-index: 2;
-  background-color: orange;
-  animation: appear 2s 1;
+  top: 17%;
+  left: 15%;
+  // transform: translate(-50%, -50%);
+  width: 70%;
+  height: 60%;
 }
 
-img {
+
+.bg {
   height: 100vh;
   min-height: 400px;
   width: 100%;
@@ -27,26 +63,10 @@ img {
   clip-path: polygon(45% 0, 55% 55%, 45% 100%, 0 100%, 0 0);
 }
 
-.title,
-.text {
-  position: absolute;
-  left: 5%;
-  color: white;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.63);
-  // animation: appear 2s 1;
-}
-.title {
-  top: 7%;
-  font-size: 5vw;
-  text-align: center;
-  width: 90%;
+.profile{
+    height: 40vh;
 }
 
-.text {
-  top: 37%;
-  font-size: 2vw;
-  width: 90%;
-}
 
 @media screen and (max-width: 580px) {
   .content {
@@ -78,21 +98,4 @@ img {
   }
 }
 
-@keyframes appear {
-  from {
-    transform: translate(-1000px, -50%);
-    opacity: 0;
-  }
-  to {
-    transform: translate(-50%, -50%);
-    opacity: 1;
-  }
-}
-@keyframes fade {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
+

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { IAbout, INavabar } from 'src/app/common/iComponents';
 import { About, Navbar } from 'src/app/common/language-text';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-about-us',
@@ -13,6 +14,8 @@ export class AboutUsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    AOS.init();
+    AOS.refresh();
     let lang = localStorage.getItem("language") ?? "en";
     this.onLanguageChange(lang)
   }

@@ -9,11 +9,15 @@ import { Warning } from 'src/app/common/language-text';
   styleUrls: ['./warning.component.scss']
 })
 export class WarningComponent implements OnInit {
-  @Input() data : IWarning = Warning["en"]
+  @Input() data: IWarning = Warning["en"]
+  text: string = Warning["en"].text
+  first: string = "NO";
   constructor() { }
 
   ngOnInit(): void {
     AOS.init()
+    this.first = this.data.text?.split(' ')[0]
+    this.text = this.data.text?.replace(this.first,'')
   }
 
 }

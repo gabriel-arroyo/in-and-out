@@ -13,7 +13,6 @@ img {
   width: 100%;
   z-index: -1;
   clip-path: polygon(45% 0, 55% 55%, 45% 100%, 0 100%, 0 0);
-  animation: appear 1.5s 1;
 }
 
 .info-container {
@@ -22,7 +21,6 @@ img {
   left: 0%;
   padding-left: 8vw;
   padding-top: 10vw;
-  animation: appear 2s 1;
 }
 
 .title1,
@@ -62,6 +60,7 @@ img {
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   perspective: 1000px;
+  font-family: "EgyptienneBold";
 }
 
 .button:hover {
@@ -155,13 +154,3 @@ img {
   }
 }
 
-@keyframes appear {
-  from {
-    transform: translate(-1000px);
-    opacity: 0;
-  }
-  to {
-    transform: translate(0px);
-    opacity: 1;
-  }
-}
