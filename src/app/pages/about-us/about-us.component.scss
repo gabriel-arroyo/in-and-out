@@ -1,10 +1,12 @@
 .container {
   background-color: var(--green);
 }
+
 .content {
   background-color: orange;
   z-index: 2;
 }
+
 .info {
   display: flex;
   flex-direction: row;
@@ -19,7 +21,7 @@
 
 .title {
   font-size: 4vw;
-  text-align:center;
+  text-align: center;
   text-transform: capitalize;
   margin: 18px;
   margin-bottom: 5px;
@@ -44,6 +46,7 @@
   left: 0;
   width: 100%;
 }
+
 .content {
   position: absolute;
   top: 17%;
@@ -58,55 +61,56 @@
   min-height: 400px;
   width: 100%;
   z-index: -1;
-  clip-path: polygon(45% 0, 55% 55%, 45% 100%, 0 100%, 0 0);
 }
 
-.profile{
-    height: 40vh;
+.profile {
+  height: 40vh;
 }
 
 
 @media screen and (max-width: 580px) {
-.content {
-  position: absolute;
-  top: 17%;
-  left: 15%;
-  width: 70%;
-  height: 60%;
-}
-.profile{
-	margin-top:20px;
-    width:30vh;
+  .content {
+    position: absolute;
+    top: 17%;
+    left: 15%;
+    width: 70%;
+    height: 60%;
+  }
+
+  .profile {
+    margin-top: 20px;
+    width: 30vh;
     height: auto;
-    margin-left:25%;
-}
+    margin-left: 25%;
+  }
 
   img {
     clip-path: none;
   }
-	.info {
-	  display: flex;
-	  flex-direction: column;
-	  width: 90%;
-	}
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
 
   .title,
   .text {
     left: 0%;
   }
+
   .title {
     top: 4%;
     font-size: 7vw;
   }
-.text {
-  margin: 0;
-  padding-left: 5vw;
-  padding-right: 1vw;
-  font-size: 3vw;
-  width: 90%;
-  text-align: justify;
-  line-height: 140%;
-}
-}
 
-
+  .text {
+    margin: 0;
+    padding-left: 5vw;
+    padding-right: 1vw;
+    font-size: 3vw;
+    width: 90%;
+    text-align: justify;
+    line-height: 140%;
+  }
+}

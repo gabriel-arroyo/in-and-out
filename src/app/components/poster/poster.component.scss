@@ -5,6 +5,7 @@
   background-color: var(--green);
   top: 0;
   left: 0;
+  margin-bottom: -2px;
 }
 
 img {
@@ -28,17 +29,20 @@ img {
 .subtitle {
   color: white;
 }
+
 .title1 {
   font-size: 3vw;
   text-transform: uppercase;
   font-family: "EgyptienneLight";
   margin-bottom: -2vw;
 }
+
 .title2 {
   font-size: 7vw;
   margin-bottom: 20px;
   text-transform: uppercase;
 }
+
 .subtitle {
   font-size: 1.7vw;
   width: 40%;
@@ -74,33 +78,43 @@ img {
   0% {
     transform: rotate(0deg);
   }
+
   10% {
     transform: rotate(1deg);
   }
+
   20% {
     transform: rotate(0deg);
   }
+
   30% {
     transform: rotate(-1deg);
   }
+
   40% {
     transform: rotate(0deg);
   }
+
   50% {
     transform: rotate(0deg);
   }
+
   60% {
     transform: rotate(0deg);
   }
+
   70% {
     transform: rotate(-2deg);
   }
+
   80% {
     transform: rotate(0deg);
   }
+
   90% {
     transform: rotate(2deg);
   }
+
   100% {
     transform: rotate(0deg);
   }
@@ -113,6 +127,7 @@ img {
     min-height: 60vw;
     width: 100%;
   }
+
   img {
     height: 60vw;
     min-height: 60vw;
@@ -134,14 +149,17 @@ img {
     color: white;
     width: 100%;
   }
+
   .title1 {
     font-size: 6vw;
     margin-bottom: -2vw;
   }
+
   .title2 {
     font-size: 9vw;
     margin-bottom: 10px;
   }
+
   .subtitle {
     font-size: 3vw;
     width: 70%;
@@ -153,4 +171,3 @@ img {
     width: 70%;
   }
 }
-

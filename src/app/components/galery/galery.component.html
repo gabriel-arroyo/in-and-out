@@ -1,9 +1,4 @@
 <div id="gallery" class="container">
-  <!-- <img
-    class="bg"
-    src="../../../assets/images/CONTAINER NARANJA_LARGO.jpg"
-    alt="bg"
-  /> -->
   <div class="content">
     <div class="title-container">
       <h1 data-aos="fade-up" data-aos-duration="1500" class="title">{{data.title}}</h1>
@@ -11,20 +6,23 @@
         {{data.subtitle}}
       </p>
     </div>
-    <div class="items-container">
-      <app-galery-item *ngFor="let item of data.dumpsters"
-        class="zoom item"
-        price="{{item.price}}"
-        model="{{item.model}}"
-      ></app-galery-item>
+    <div class="items-bg">
+
+      <div class="items-container">
+        <app-galery-item *ngFor="let item of data.dumpsters" class="zoom item" price="{{item.price}}"
+          model="{{item.model}}"></app-galery-item>
+      </div>
     </div>
-    <p class="more-info" data-aos="zoom-in" data-aos-duration="1500">
-      {{data.moreInfo}}
-    </p>
-    <div class="blanc"> </div>
-    <!--<a class="button zoom" (click)="activate()">View More</a>
-    <div class="panel" [class.active]="active">
+    <div class="gallery-footer">
+
+      <a *ngIf="data.dumpsters.length>6" class="button zoom" (click)="activate()">View More</a>
+      <div class="panel" [class.active]="active">
+      </div>
+      <p class="more-info" data-aos="zoom-in" data-aos-duration="1500">
+        {{data.moreInfo}}
+      </p>
+      <div class="blanc"> </div>
     </div>
-    -->
+
   </div>
 </div>
