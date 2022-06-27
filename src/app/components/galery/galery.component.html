@@ -9,8 +9,8 @@
     <div class="items-bg">
 
       <div class="items-container">
-        <app-galery-item *ngFor="let item of data.dumpsters" class="zoom item" price="{{item.price}}"
-          model="{{item.model}}"></app-galery-item>
+        <app-galery-item *ngFor="let item of data.dumpsters;let i = index" class="zoom item" price="{{item.price}}"
+          index="{{i}}" model="{{item.model}}"></app-galery-item>
       </div>
     </div>
     <div class="gallery-footer">
