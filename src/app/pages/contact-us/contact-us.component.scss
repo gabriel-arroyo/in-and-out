@@ -1,6 +1,7 @@
 img {
   width: 100%;
 }
+
 .container {
   color: var(--orange);
   margin-top: 10vh;
@@ -72,8 +73,10 @@ input::placeholder {
   flex-direction: column;
   justify-content: center;
 }
+
 button {
-  background-color: var(--orange); /* Green */
+  background-color: var(--orange);
+  /* Green */
   border: none;
   color: white;
   margin-top: 5%;
@@ -91,17 +94,19 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
 .social {
-  position: absolute;
-  right: 10%;
-  bottom: 10%;
+  position: sticky;
+  right: 5%;
+  bottom: 3%;
   margin-top: 10%;
   display: flex;
   flex-direction: row;
   justify-content: right;
   margin-right: 3vw;
+
   img {
-    width: 10%;
+    width: 60px;
     margin-right: 5%;
   }
 }
@@ -117,8 +122,13 @@ a {
   height: 1.7vw;
   width: auto;
 }
-.map{
-  width: 30vw;
+
+.map-container {
+  margin-top: 40px;
+}
+
+.map {
+  width: 90vw;
   height: auto;
 }
 
@@ -128,8 +138,20 @@ a {
     justify-content: center;
     align-items: center;
   }
+
   .title {
     font-size: 7vw;
+  }
+
+  .map {
+    width: 90vw;
+  }
+
+  .icon {
+    margin-bottom: 2px;
+    margin-right: 10px;
+    height: 3.5vw;
+    width: auto;
   }
 
   .info-container {
@@ -145,14 +167,9 @@ a {
   }
 
   .social {
-	margin-top:0;
-	margin-right:0;
-	margin-left:15%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+
     img {
-      width: 15%;
+      width: 12%;
     }
   }
 }
@@ -162,25 +179,30 @@ a {
     transform: translate(-500px);
     opacity: 0;
   }
+
   to {
     transform: translate(0px);
     opacity: 1;
   }
 }
+
 @keyframes appear-right {
   from {
     transform: translate(500px);
     opacity: 0;
   }
+
   to {
     transform: translate(0px);
     opacity: 1;
   }
 }
+
 @keyframes appear-op {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }

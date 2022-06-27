@@ -5,54 +5,38 @@
     <div class="info-container">
       <div class="text-container">
         <p>
-          <img class="icon" src="../../../assets/images/MAP_ICON.png" alt="map">
+          <img class="icon" src="../../../assets/images/MAP_ICON.png" alt="address">
           7232 Navy St Detroit MI 48209
         </p>
         <p>
-          <img class="icon" src="../../../assets/images/phone-call.png" alt="map">
-          <a href="tel:3136875834"> +1 313 6875 834</a> 
+          <img class="icon" src="../../../assets/images/phone-call.png" alt="phone">
+          <a href="tel:3136875834"> +1 313 6875 834</a>
         </p>
         <p>
-          <img class="icon" src="../../../assets/images/CORREO_ICON.png" alt="map">
+          <img class="icon" src="../../../assets/images/CORREO_ICON.png" alt="email">
           <a href="mailto:sales@in&out.com">sales@in&out.com</a>
         </p>
-        <img class="map" src="../../../assets/images/map-gray.png" alt="">
       </div>
-      <div class="map"></div>
     </div>
+
     <div class="form">
       <form>
         <div class="form-group">
-          <input
-            type="text"
-            class="form-control"
-            name="Name"
-            aria-describedby="Full Name"
-            placeholder="{{data.name}}"
-            formControlName="Name"
-          />
-          <input
-            type="text"
-            class="form-control"
-            name="Phone"
-            aria-describedby="Phone Number"
-            placeholder="{{data.phone}}"
-            formControlName="Phone"
-          />
-          <input
-            type="email"
-            class="form-control"
-            name="Email"
-            aria-describedby="emailHelp"
-            placeholder="{{data.mail}}"
-            formControlName="Email"
-          />
+          <input type="text" class="form-control" name="Name" aria-describedby="Full Name" placeholder="{{data.name}}"
+            formControlName="Name" />
+          <input type="text" class="form-control" name="Phone" aria-describedby="Phone Number"
+            placeholder="{{data.phone}}" formControlName="Phone" />
+          <input type="email" class="form-control" name="Email" aria-describedby="emailHelp" placeholder="{{data.mail}}"
+            formControlName="Email" />
         </div>
 
         <div class="button-container">
           <button type="submit" class="btn btn-primary">{{data.button}}</button>
         </div>
       </form>
+    </div>
+    <div class="map-container">
+      <img class="map" src="../../../assets/images/map-gray.png" alt="">
     </div>
   </div>
   <div class="social">
