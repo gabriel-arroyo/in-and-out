@@ -5,6 +5,7 @@
   font-family: "EgyptienneBold";
   src: url("./assets/fonts/EgyptienneStdMedium.ttf") format("truetype");
 }
+
 @font-face {
   font-family: "EgyptienneLight";
   src: url("./assets/fonts/EgyptienneStdLight.ttf") format("truetype");
@@ -18,6 +19,7 @@
 
 
 $gray: #494949;
+
 :root {
   --gray: #{$gray};
   --green: #cff800;

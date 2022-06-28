@@ -1,7 +1,7 @@
 <app-navbar (languageEmitter)="onLanguageChange($event)" [data]="navbar"></app-navbar>
 <div id="poster" class="container">
-  <!-- <img class="bg" src="../../../assets/images/CONTAINER NEGRO.jpg" alt="bg" /> -->
   <img src="../../../assets/images/Background-about.png" alt="bg" class="bg">
+
   <div class="content" data-aos="fade-right" data-aos-offset="400" data-aos-duration="1500">
     <p class="title">{{data.title}}</p>
     <div class="info">
@@ -11,4 +11,15 @@
       <img class="profile" src="../../../assets/images/img-clean.png" alt="dumpster" />
     </div>
   </div>
+
+  <div class="content-sm">
+    <p class="title">{{data.title}}</p>
+    <div class="info">
+      <p class="text">
+        {{data.text}}
+      </p>
+      <img class="profile" src="../../../assets/images/img-clean.png" alt="dumpster" />
+    </div>
+  </div>
+
 </div>
