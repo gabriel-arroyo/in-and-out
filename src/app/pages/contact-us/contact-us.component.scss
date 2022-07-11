@@ -132,6 +132,11 @@ a {
   height: auto;
 }
 
+.bottom {
+  display: flex;
+  flex-direction: column
+}
+
 @media screen and (max-width: 580px) {
   .body {
     flex-direction: column;
