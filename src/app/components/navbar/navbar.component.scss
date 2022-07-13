@@ -1,3 +1,7 @@
+.spacer {
+  height: 60px;
+}
+
 .container {
   font-family: "EgyptienneBold";
   background-color: var(--gray);
@@ -7,12 +11,15 @@
   height: 45px;
   padding: 12px 60px;
   z-index: 5;
-  position: sticky;
+  position: fixed;
+  top: 0;
+  width: 100vw;
 }
 
 .right-items {
   display: flex;
   align-items: center;
+  padding-right: 90px;
 }
 
 .img-lang {
@@ -74,6 +81,7 @@ img {
   .menu-item {
     font-size: 1.5vw;
   }
+
 }
 
 @media screen and (max-width: 580px) {
@@ -98,5 +106,9 @@ img {
     margin-left: 0.8rem;
     margin-right: 0.8rem;
     font-size: 1.9vw;
+  }
+
+  .right-items {
+    padding-right: 50px;
   }
 }

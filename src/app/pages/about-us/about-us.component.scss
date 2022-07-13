@@ -42,10 +42,13 @@
 .title {
   font-size: 4vw;
   text-align: center;
-  text-transform: capitalize;
   margin: 18px;
   margin-bottom: 5px;
   font-family: "EgyptienneBold";
+}
+
+.title::first-letter {
+  text-transform: capitalize;
 }
 
 .text {

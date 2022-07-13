@@ -1,7 +1,8 @@
 <div class="container" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
   <img *ngIf="isEven(index)" [class.border]="isLeft(index)" [class.rotated-border]="isRight(index)"
     src="../../../assets/images/gallery-img-bg.png" alt="">
-  <img [class.image]="isEven(index)" [class.spacing]="!isEven(index)" src="{{src}}" alt="dumster" />
+  <img *ngIf="!isEven(index)" class="border" src="../../../assets/images/gallery-img-border.png" alt="">
+  <img class="image" src="{{src}}" alt="dumster" />
   <h3 class="price">{{ price }}</h3>
   <h3 class="model">{{ model }}</h3>
 </div>

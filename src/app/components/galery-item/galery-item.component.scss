@@ -8,6 +8,8 @@ $width: 226px;
   margin: 0%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .spacing {
@@ -45,13 +47,14 @@ $width: 226px;
 
 .model {
   text-align: center;
+  font-size: 1.8vw;
 }
 
 .price {
   margin-top: 12%;
   margin-bottom: 5%;
   text-align: center;
-  font-size: 2.5vw;
+  font-size: 2.1vw;
 }
 
 @media screen and (max-width: 580px) {

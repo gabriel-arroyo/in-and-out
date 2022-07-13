@@ -6,15 +6,15 @@
         {{data.subtitle}}
       </p>
     </div>
-    <div class="items-bg">
 
+    <div class="items-bg">
       <div class="items-container">
         <app-galery-item *ngFor="let item of data.dumpsters;let i = index" class="zoom item" price="{{item.price}}"
           index="{{i}}" model="{{item.model}}"></app-galery-item>
       </div>
     </div>
-    <div class="gallery-footer">
 
+    <div class="gallery-footer">
       <a *ngIf="data.dumpsters.length>6" class="button zoom" (click)="activate()">View More</a>
       <div class="panel" [class.active]="active">
       </div>
