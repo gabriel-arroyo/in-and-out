@@ -96,14 +96,11 @@ a {
 }
 
 .social {
-  position: fixed;
-  width: 100vw;
-  right: 5px;
-  bottom: 15px;
-  margin-top: 10%;
+  margin-bottom: 2%;
+  //alignt to right
   display: flex;
   flex-direction: row;
-  justify-content: right;
+  justify-content: flex-end;
 
   img {
     width: 50px;
@@ -126,7 +123,9 @@ a {
 
 .map-container {
   margin-top: 40px;
-  margin-bottom: 10%;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
 }
 
 .map {
