@@ -1,27 +1,57 @@
+$poster-widt: 100vw;
+$logo-separation : 33px;
+
+.container,
+img {
+  width: $poster-widt;
+  min-height: 200px;
+  height: 60vh;
+}
+
 .container {
-  position: relative;
-  height: 40vw;
-  min-height: 400px;
   background-color: var(--green);
-  top: 0;
-  left: 0;
   margin-bottom: -2px;
+  position: relative;
 }
 
 img {
-  height: 40vw;
-  min-height: 400px;
-  width: 100%;
-  z-index: -1;
   clip-path: polygon(45% 0, 55% 55%, 45% 100%, 0 100%, 0 0);
+  position: absolute;
+  left: 0;
+  animation-name: fade-in;
+  animation-duration: 2s;
+  animation-fill-mode: backwards;
 }
+
 
 .info-container {
   position: absolute;
-  top: 0%;
-  left: 0%;
-  padding-left: 8vw;
-  padding-top: 10vw;
+  top: 0;
+  left: 0;
+  height: calc(100% - $logo-separation);
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: $logo-separation;
+  margin-left: 15vmin;
+  animation-name: fade-in;
+  animation-duration: 2s;
+  animation-fill-mode: backwards;
+}
+
+//fade-in animation
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    left: -500px;
+  }
+
+  100% {
+    opacity: 1;
+    left: 0;
+  }
 }
 
 .title1,
@@ -31,24 +61,72 @@ img {
 }
 
 .title1 {
-  font-size: 3vw;
+  font-size: 5vmin;
   text-transform: uppercase;
   font-family: "EgyptienneLight";
-  margin-bottom: -2vw;
+  margin-bottom: -3vmin;
 }
 
+
 .title2 {
-  font-size: 7vw;
-  margin-bottom: 20px;
+  font-size: 12vmin;
   text-transform: uppercase;
 }
 
 .subtitle {
-  font-size: 1.7vw;
-  width: 40%;
+  font-size: 3vmin;
+  width: 80%;
   font-family: "EgyptienneLight";
-  margin-bottom: 40px;
+  margin-bottom: 5vmin;
 }
+
+@media screen and (max-width: 1030px) {
+  .title1 {
+    font-size: 4vmin;
+    margin-bottom: -2vmin;
+  }
+
+  .title2 {
+    font-size: 9vmin;
+  }
+
+  .subtitle {
+    font-size: 2vmin;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  img {
+    clip-path: none;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .info-container {
+    position: relative;
+    width: calc(100% - 30vmin);
+    margin: 0;
+  }
+
+  .title1 {
+    font-size: 1.3rem;
+    margin-bottom: -2vmin;
+  }
+
+  .title2 {
+    font-size: 3.5rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+}
+
+
 
 .button {
   margin-left: 3%;
@@ -58,13 +136,14 @@ img {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 1.6vw;
+  font-size: calc(0.8rem + 0.3vw);
   color: var(--gray);
   animation: shake 0.8s linear infinite;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   perspective: 1000px;
   font-family: "EgyptienneBold";
+  min-width: 80px;
 }
 
 .button:hover {
@@ -120,54 +199,54 @@ img {
   }
 }
 
-@media screen and (max-width: 580px) {
-  .container {
-    height: 60vw;
-    max-height: 60vw;
-    min-height: 60vw;
-    width: 100%;
-  }
+// // @media screen and (max-width: 580px) {
+// //   .container {
+// //     height: 60vw;
+// //     max-height: 60vw;
+// //     min-height: 60vw;
+// //     width: 100%;
+// //   }
 
-  img {
-    height: 60vw;
-    min-height: 60vw;
-    min-height: 60vw;
-    width: 100%;
-    z-index: -1;
-    clip-path: none;
-  }
+// //   img {
+// //     height: 60vw;
+// //     min-height: 60vw;
+// //     min-height: 60vw;
+// //     width: 100%;
+// //     z-index: -1;
+// //     clip-path: none;
+// //   }
 
-  .info-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+// //   .info-container {
+// //     display: flex;
+// //     flex-direction: column;
+// //     justify-content: center;
+// //   }
 
-  .title1,
-  .title2,
-  .subtitle {
-    color: white;
-    width: 100%;
-  }
+// //   .title1,
+// //   .title2,
+// //   .subtitle {
+// //     color: white;
+// //     width: 100%;
+// //   }
 
-  .title1 {
-    font-size: 6vw;
-    margin-bottom: -2vw;
-  }
+// //   .title1 {
+// //     font-size: 6vw;
+// //     margin-bottom: -2vw;
+// //   }
 
-  .title2 {
-    font-size: 9vw;
-    margin-bottom: 10px;
-  }
+// //   .title2 {
+// //     font-size: 9vw;
+// //     margin-bottom: 10px;
+// //   }
 
-  .subtitle {
-    font-size: 3vw;
-    width: 70%;
-    margin-bottom: 20px;
-  }
+// //   .subtitle {
+// //     font-size: 3vw;
+// //     width: 70%;
+// //     margin-bottom: 20px;
+// //   }
 
-  .button {
-    font-size: 4vw;
-    width: 70%;
-  }
-}
+// //   .button {
+// //     font-size: 4vw;
+// //     width: 70%;
+// //   }
+// // }

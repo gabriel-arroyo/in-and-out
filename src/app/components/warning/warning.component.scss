@@ -6,11 +6,12 @@
 }
 
 .img-bg {
-  width: 100%;
+  width: 100vw;
   position: relative;
   top: 0;
   left: 0;
-  height: 30vw;
+  height: 20vw;
+  margin-top: -25px;
 }
 
 .logo {
@@ -23,7 +24,7 @@
   transform: scaleX(-1);
 }
 
-.first{
+.first {
   font-size: 4vw;
 }
 

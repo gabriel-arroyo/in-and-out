@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { fromEvent } from 'rxjs';
+import { map, filter, debounceTime, tap, switchAll } from 'rxjs/operators';
 import { GlobalState } from 'src/app/common/global-state';
 import { IPoster } from 'src/app/common/iComponents';
 import { Poster } from 'src/app/common/language-text';
@@ -13,6 +15,7 @@ export class PosterComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }
