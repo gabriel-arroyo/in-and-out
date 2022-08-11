@@ -1,5 +1,6 @@
 $poster-widt: 100vw;
 $logo-separation : 33px;
+$video-width-ratio: 0.46875;
 
 .container,
 img {
@@ -14,8 +15,17 @@ img {
   position: relative;
 }
 
+#video {
+  position: absolute;
+  top: -11%;
+  right: 0px;
+  height: 115%;
+  width: auto;
+  z-index: 0;
+}
+
 img {
-  clip-path: polygon(45% 0, 55% 55%, 45% 100%, 0 100%, 0 0);
+  clip-path: polygon(calc(100% - 121vh) 0, calc(100% - 118vh) 50%, calc(100% - 121vh) 100%, 0 100%, 0 0);
   position: absolute;
   left: 0;
   animation-name: fade-in;

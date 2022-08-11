@@ -43,29 +43,33 @@ export const Warning: Translation<IWarning> = {
     }
 }
 
-export const Gallery: Translation<IGallery> ={
+export const Gallery: Translation<IGallery> = {
     es: {
         title: "Galería",
         subtitle: "Elige nuestros dumpsters para cualquier uso: Construcción, remodelaciones, limpieza de casas, comercial u otro…  llámanos o escríbenos y te atenderemos rápidamente, ofreciéndote el contenedor que se ajuste a tus necesidades y el mejor precio.",
-        dumpsters:[
+        dumpsters: [
             {
+                src: "../../assets/images/dumpsters/dumspterpict1.jpg",
                 model: "10 yardas",
                 price: "Desde 300 USD"
             },
             {
+                src: "../../assets/images/dumpsters/dumspterpict2.jpg",
                 model: "15 yardas",
                 price: "Desde 360 USD"
             },
             {
+                src: "../../assets/images/dumpsters/dumspterpict3.jpg",
                 model: "20 yardas",
                 price: "Desde 390 USD"
             },
             {
+                src: "../../assets/images/dumpsters/big-dumspter.jpg",
                 model: "30 yardas",
                 price: "Desde 475 USD"
             },
         ],
-        moreInfo:`Actualmente contamos con servicio en Detroit y sus alrededores. 
+        moreInfo: `Actualmente contamos con servicio en Detroit y sus alrededores. 
 
         Algunos de estos: Taylor, Lincoln Park, Southgate, Melvindale, Ecorse, Allen Park, Dearborn, Dearborn Heights, Romulus, Livonia, Hamtramck, Highland Park, Inkster, Warren, Westland, Woodhaven, Wyandotte, Southfield, Oak Park, Grosse Pointe Farms, Harper Woods.
         `
@@ -73,32 +77,36 @@ export const Gallery: Translation<IGallery> ={
     en: {
         title: "Gallery",
         subtitle: "Choose our dumpsters for any use: Construction, remodeling, house cleaning, commercial or other… call or text us and we will respond you quickly, offering you the best container and the best price.",
-        dumpsters:[
+        dumpsters: [
             {
+                src: "../../assets/images/dumpsters/dumspterpict1.jpg",
                 model: "10 yards",
                 price: "From $300 and up"
             },
             {
+                src: "../../assets/images/dumpsters/dumspterpict2.jpg",
                 model: "15 yards",
                 price: "From $360 and up"
             },
             {
+                src: "../../assets/images/dumpsters/dumspterpict3.jpg",
                 model: "20 yards",
                 price: "From $390 and up"
             },
             {
+                src: "../../assets/images/dumpsters/big-dumspter.jpg",
                 model: "30 yards",
                 price: "From $475 and up"
             },
         ],
-        moreInfo:`Currently, we have service at Detroit and surrounding areas.  Some of Those: 
+        moreInfo: `Currently, we have service at Detroit and surrounding areas.  Some of Those: 
         Taylor, Lincoln Park, Southgate, Melvindale, Ecorse, Allen Park, Dearborn, Dearborn Heights, Romulus, Livonia, Hamtramck, Highland Park, Inkster, Warren, Westland, Woodhaven, Wyandotte, Southfield, Oak Park, Grosse Pointe Farms, Harper Woods.
         `
     }
 }
 
 export const About: Translation<IAbout> = {
-    es:{
+    es: {
         title: "Acerca de nosotros",
         text: `En IN&OUT Dumpster Rentals nuestro mayor objetivo es que estés satisfecho con nuestro servicio.
 
