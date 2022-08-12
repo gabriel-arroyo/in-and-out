@@ -16,10 +16,10 @@
   background-color: orange;
   z-index: 2;
   position: absolute;
-  top: 25%;
+  top: 20%;
   left: 15%;
   width: 70%;
-  height: 60%;
+  height: 40vw;
   display: block;
 }
 
@@ -29,8 +29,10 @@
 
 .info {
   display: flex;
-  flex-direction: row;
-  width: 112%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
 }
 
 .title,
@@ -56,9 +58,14 @@
   padding-left: 5vw;
   padding-right: 1vw;
   font-size: 1.6vw;
-  width: 60%;
   text-align: justify;
   line-height: 140%;
+  width: 80%;
+
+  @media screen and (max-width: 768px) {
+    width: 60%;
+  }
+
 }
 
 .bg {
@@ -70,7 +77,9 @@
 }
 
 .profile {
-  height: 22vh;
+  height: auto;
+  width: 50%;
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 950px) {
@@ -86,7 +95,7 @@
 
   .profile {
     height: 20vw;
-    width: 30vw;
+    width: auto;
   }
 
   .info {
@@ -94,6 +103,11 @@
     flex-direction: column;
     width: 100%;
     align-items: center;
+  }
+
+  .content,
+  .content-sm {
+    height: calc(100% - 90vw);
   }
 }
 
@@ -109,10 +123,10 @@
   }
 
   .profile {
+    margin-left: 50px;
     margin-top: 20px;
-    width: 30vh;
+    width: 20vh;
     height: auto;
-    margin-left: 25%;
   }
 
   img {
@@ -123,6 +137,8 @@
     display: flex;
     flex-direction: column;
     width: 90%;
+    align-items: center;
+    justify-content: center;
   }
 
   .title,
