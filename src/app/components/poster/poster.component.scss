@@ -10,7 +10,7 @@ img {
 }
 
 .container {
-  background-color: var(--green);
+  background-color: black;
   margin-bottom: -2px;
   position: relative;
 }
@@ -18,7 +18,7 @@ img {
 #video {
   position: absolute;
   top: -11%;
-  right: 0px;
+  right: 14px;
   height: 115%;
   width: auto;
   z-index: 0;
@@ -135,19 +135,17 @@ img {
 
 }
 
-@media screen and (max-width: 1020px) {
-  #video {
-    transform: translateX(2vw);
-  }
-}
-
 @media screen and (max-width: 900px) {
   #video {
-    transform: translateX(50vw);
+    transform: translateX(25vw);
   }
 }
 
 @media screen and (max-width: 600px) {
+  #video {
+    display: none;
+  }
+
   img {
     clip-path: none;
   }
