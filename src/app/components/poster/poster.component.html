@@ -3,7 +3,8 @@
     data-aos-duration="1500" />
 
 
-  <video *ngIf="innerWidth>600" autoplay controls loop id="video" poster="../../../assets/videos/video-placeholder.png">
+  <video *ngIf="innerWidth>600" playsinline autoplay muted controls loop id="video"
+    poster="../../../assets/videos/video-placeholder.png">
     <source src="../../../assets/videos/intro-reduced.mp4" type="video/mp4">
   </video>
 
@@ -18,7 +19,7 @@
     <a [routerLink]="['/contact']" class="button">{{data.button}}</a>
   </div>
 </div>
-<video *ngIf="innerWidth<=600" autoplay controls loop id="video-small"
+<video *ngIf="innerWidth<=600" playsinline autoplay muted controls loop id="video-small"
   poster="../../../assets/videos/video-placeholder.png">
   <source src="../../../assets/videos/intro-reduced.mp4" type="video/mp4">
 </video>
