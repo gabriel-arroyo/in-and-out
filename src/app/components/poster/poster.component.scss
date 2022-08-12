@@ -24,6 +24,15 @@ img {
   z-index: 0;
 }
 
+#video-small {
+  position: absolute;
+  top: 0%;
+  right: 0px;
+  width: 100%;
+  height: 100%;
+
+}
+
 img {
   clip-path: polygon(calc(100% - 121vh) 0, calc(100% - 118vh) 50%, calc(100% - 121vh) 100%, 0 100%, 0 0);
   position: absolute;
@@ -45,7 +54,7 @@ img {
   align-items: flex-start;
   justify-content: center;
   margin-top: $logo-separation;
-  margin-left: 15vmin;
+  margin-left: 8vmin;
   animation-name: fade-in;
   animation-duration: 2s;
   animation-fill-mode: backwards;
@@ -157,18 +166,19 @@ img {
   }
 
   .info-container {
+    background-color: transparent;
     position: relative;
     width: calc(100% - 30vmin);
     margin: 0;
   }
 
   .title1 {
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin-bottom: -2vmin;
   }
 
   .title2 {
-    font-size: 3.5rem;
+    font-size: calc(15px + 10vw);
   }
 
   .subtitle {

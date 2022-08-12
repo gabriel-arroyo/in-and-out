@@ -20,6 +20,9 @@ export class PosterComponent implements OnInit {
   }
   ngOnInit() {
     this.innerWidth = window.innerWidth;
+    const video = document.getElementById('video') as HTMLVideoElement || null;
+    video?.play();
   }
+
 
 }
