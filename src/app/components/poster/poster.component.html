@@ -1,25 +1,28 @@
-<div id="poster" class="container">
-  <img src="../../../assets/images/poster-black.webp" alt="bg" data-aos="fade-right" data-aos-offset="500"
-    data-aos-duration="1500" />
+<div>
+  <div id="poster" class="container">
+    <img src="../../../assets/images/poster-black.webp" alt="bg" data-aos="fade-right" data-aos-offset="500"
+      data-aos-duration="1500" />
 
 
-  <video *ngIf="innerWidth>600" playsinline autoplay muted controls loop id="video"
+    <video *ngIf="innerWidth>600" onloadeddata="setTimeout(function() { this.play()},6000)" onmouseenter="this.play()"
+      playsinline loop muted controls id="video" poster="../../../assets/videos/video-placeholder.png">
+      <source src="../../../assets/videos/intro-reduced.mp4" type="video/mp4">
+    </video>
+
+    <img src="../../../assets/images/CONTAINER-NEGRO.webp" alt="bg" />
+
+    <div class="info-container">
+      <div class="title1">{{data.title1}}</div>
+      <div class="title2">{{data.title2}}</div>
+      <div class="subtitle">
+        {{data.subtitle}}
+      </div>
+      <a [routerLink]="['/contact']" class="button">{{data.button}}</a>
+    </div>
+  </div>
+  <video *ngIf="innerWidth<=600" playsinline autoplay muted controls loop id="video-small"
     poster="../../../assets/videos/video-placeholder.png">
     <source src="../../../assets/videos/intro-reduced.mp4" type="video/mp4">
   </video>
 
-  <img src="../../../assets/images/CONTAINER-NEGRO.webp" alt="bg" />
-
-  <div class="info-container">
-    <div class="title1">{{data.title1}}</div>
-    <div class="title2">{{data.title2}}</div>
-    <div class="subtitle">
-      {{data.subtitle}}
-    </div>
-    <a [routerLink]="['/contact']" class="button">{{data.button}}</a>
-  </div>
 </div>
-<video *ngIf="innerWidth<=600" playsinline autoplay muted controls loop id="video-small"
-  poster="../../../assets/videos/video-placeholder.png">
-  <source src="../../../assets/videos/intro-reduced.mp4" type="video/mp4">
-</video>
