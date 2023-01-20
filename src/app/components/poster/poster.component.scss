@@ -23,7 +23,7 @@ img {
 
 #video {
   position: absolute;
-  top: -11%;
+  top: -10%;
   right: 14px;
   height: 112%;
   width: auto;
@@ -108,16 +108,16 @@ img {
 
 @media screen and (max-width: 1700px) {
   .title1 {
-    font-size: 4vmin;
+    font-size: 6vmin;
     margin-bottom: -2vmin;
   }
 
   .title2 {
-    font-size: 9vmin;
+    font-size: 12vmin;
   }
 
   .subtitle {
-    font-size: 2vmin;
+    font-size: 3vmin;
     max-width: 60%;
   }
 }

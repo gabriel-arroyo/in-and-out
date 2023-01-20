@@ -68,6 +68,69 @@ export const Gallery: Translation<IGallery> = {
                 model: "30 yardas",
                 price: "Desde 475 USD"
             },
+
+        ],
+        moreInfo: `Actualmente contamos con servicio en Detroit y sus alrededores. 
+
+        Algunos de estos: Taylor, Lincoln Park, Southgate, Melvindale, Ecorse, Allen Park, Dearborn, Dearborn Heights, Romulus, Livonia, Hamtramck, Highland Park, Inkster, Warren, Westland, Woodhaven, Wyandotte, Southfield, Oak Park, Grosse Pointe Farms, Harper Woods.
+        `
+    },
+    en: {
+        title: "Gallery",
+        subtitle: "Choose our dumpsters for any use: Construction, remodeling, house cleaning, commercial or other… call or text us and we will respond you quickly, offering you the best container and the best price.",
+        dumpsters: [
+            {
+                src: "../../assets/images/dumpsters/size1.png",
+                model: "10 yards",
+                price: "From $300 and up"
+            },
+            {
+                src: "../../assets/images/dumpsters/size2.png",
+                model: "15 yards",
+                price: "From $360 and up"
+            },
+            {
+                src: "../../assets/images/dumpsters/size3.png",
+                model: "20 yards",
+                price: "From $390 and up"
+            },
+            {
+                src: "../../assets/images/dumpsters/size4.png",
+                model: "30 yards",
+                price: "From $475 and up"
+            },
+        ],
+        moreInfo: `Currently, we have service at Detroit and surrounding areas.  Some of Those: 
+        Taylor, Lincoln Park, Southgate, Melvindale, Ecorse, Allen Park, Dearborn, Dearborn Heights, Romulus, Livonia, Hamtramck, Highland Park, Inkster, Warren, Westland, Woodhaven, Wyandotte, Southfield, Oak Park, Grosse Pointe Farms, Harper Woods.
+        `
+    }
+}
+
+export const Dumpsters: Translation<IGallery> = {
+    es: {
+        title: "Galería",
+        subtitle: "Elige nuestros dumpsters para cualquier uso: Construcción, remodelaciones, limpieza de casas, comercial u otro…  llámanos o escríbenos y te atenderemos rápidamente, ofreciéndote el contenedor que se ajuste a tus necesidades y el mejor precio.",
+        dumpsters: [
+            {
+                src: "../../assets/images/dumpsters/size1.png",
+                model: "10 yardas",
+                price: "Desde 300 USD"
+            },
+            {
+                src: "../../assets/images/dumpsters/size2.png",
+                model: "15 yardas",
+                price: "Desde 360 USD"
+            },
+            {
+                src: "../../assets/images/dumpsters/size3.png",
+                model: "20 yardas",
+                price: "Desde 390 USD"
+            },
+            {
+                src: "../../assets/images/dumpsters/size4.png",
+                model: "30 yardas",
+                price: "Desde 475 USD"
+            },
         ],
         moreInfo: `Actualmente contamos con servicio en Detroit y sus alrededores. 
 
